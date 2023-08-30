@@ -16,6 +16,6 @@ import com.tutorial.movieapp.ui.theme.MovieAppTheme
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
     }
 }

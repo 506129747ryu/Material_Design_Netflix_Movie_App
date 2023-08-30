@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:background="@drawable/gradient_color_background">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="360dp"
+                    android:layout_height="360dp"
+                    android:src="@tools:sample/avatars"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.32999998"
+                    app:srcCompat="@drawable/circle_gradient" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:shapeAppearanceOverlay="@style/roundedImageRounded"
+                    app:strokeWidth="1dp"
+                    tools:srcCompat="@drawable/woman">
+
+                </com.google.android.material.imageview.ShapeableImageView>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Waatch Videos in\n Virtual Reality"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Download and watch oofline \n wherever you are"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="64dp"
+                android:background="@drawable/background_gradient_2">
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    android:background="@drawable/intro_btn_background"
+                    android:text="Get In"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
