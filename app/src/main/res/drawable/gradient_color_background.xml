@@ -8,7 +8,7 @@
                 android:type="radial"
                 android:gradientRadius="110%p"
                 android:centerX="0.2"
-                android:centerY=""/>
+                android:centerY="0.2"/>
         </shape>
     </item>
 

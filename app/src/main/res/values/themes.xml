@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.MovieApp" parent="Theme.AppCompat.NoActionBar" />
+    <style name="Theme.MovieApp" parent="Theme.MaterialComponents.NoActionBar" />
     <style name="roundedImageRounded">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
