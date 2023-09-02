@@ -49,7 +49,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/posterBigImg"
 
-                    app:shapeAppearanceOverlay="@style/roundedImageRounded" />
+                    app:shapeAppearanceOverlay="@style/roundedImageView" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
