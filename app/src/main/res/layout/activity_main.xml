@@ -64,7 +64,7 @@
                 android:layout_height="match_parent">
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/view2"
+                    android:id="@+id/view1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
@@ -83,11 +83,11 @@
                     style="?android:attr/progressBarStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="@+id/view2"
+                    app:layout_constraintBottom_toBottomOf="@+id/view1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/view2" />
+                    app:layout_constraintTop_toTopOf="@+id/view1" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
@@ -122,7 +122,7 @@
                     app:layout_constraintVertical_bias="1.0" />
 
                 <ProgressBar
-                    android:id="@+id/loading1"
+                    android:id="@+id/loading2"
                     style="?android:attr/progressBarStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -143,6 +143,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="bottom"
@@ -162,7 +163,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
-                    android:src="@drawable/btn_1" />
+                    android:src="@drawable/btn_1"
+                    app:tint="@color/white" />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -171,7 +173,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
-                    android:src="@drawable/btn_2" />
+                    android:src="@drawable/btn_2"
+                    app:tint="@color/white" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -189,7 +192,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
-                    android:src="@drawable/btn_4" />
+                    android:src="@drawable/btn_4"
+                    app:tint="@color/white" />
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -198,8 +202,18 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
-                    android:src="@drawable/btn_2" />
+                    android:src="@drawable/btn_2"
+                    app:tint="@color/white" />
             </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
+        
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxImageSize="30dp"
+            app:layout_anchor="@id/app_bar"
+            style="@style/Floating">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
