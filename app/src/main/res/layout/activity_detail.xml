@@ -44,10 +44,10 @@
                     android:id="@+id/posterNormalImg"
                     android:layout_width="210dp"
                     android:layout_height="300dp"
+                    android:scaleType="centerCrop"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/posterBigImg"
 
                     app:shapeAppearanceOverlay="@style/roundedImageView" />
 
@@ -223,6 +223,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/movieActorInfo" />
